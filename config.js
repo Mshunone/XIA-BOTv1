@@ -77,16 +77,16 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/537edd58e7f8849a7dc50.jpg'
+global.thumbdoc = 'https://telegra.ph/file/c4ade387f6bde8b62d0b8.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '564588643' // default 10TB
 global.fpagedoc = '444'
 
 // Sticker WM
-global.packname = 'Jarot offc'
-global.author = 'Jarot offc'
-global.wm = '© Jarot offc'
+global.packname = 'Kasan ofc'
+global.author = 'Kasan offc'
+global.wm = '© Kasan offc'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
