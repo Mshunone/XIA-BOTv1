@@ -52,7 +52,7 @@ module.exports = {
           break
       }
       m.exp = 0
-      m.limit = false
+      m.limit = true
       m.money = false
       m.spin = false
       m.uangkau = false
@@ -63,7 +63,7 @@ module.exports = {
           if (!isNumber(user.exp)) user.exp = 0
           if (! isNumber(user.spin)) user.spin = 10
           if (! isNumber(user.money)) user.money = 1000
-          if (!isNumber(user.limit)) user.limit = 1000
+          if (!isNumber(user.limit)) user.limit = 25
           if (!user.acc) user.acc = false
           if (!user.acc) user.end = false
           if (!isNumber(user.lastclaim)) user.lastclaim = 0
@@ -106,7 +106,7 @@ module.exports = {
           if(!('staff' in user)) user.staff = false
         } else global.db.data.users[m.sender] = {
           exp: 0,
-          limit: 1000,
+          limit: 25,
           money: 1000,
           spin: 10,
           hoki: 1,
@@ -258,7 +258,7 @@ module.exports = {
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = 'Kamu Dah Premi'
-          if (!('sDemote' in chat)) chat.sDemote = 'Kasihan jadi member'
+          if (!('sDemote' in chat)) chat.sDemote = 'Anjir Jadi Member'
           if (!('warn' in chat)) chat.warn = false
           if (!('expired' in chat)) chat.expired = 0
           if (!('mining' in chat)) chat.mining = false
@@ -277,7 +277,7 @@ module.exports = {
           sDemote: '',
           warn: false, 
           delete: true,
-          antiLink: false,
+          antiLink: true,
           mining: false, 
         }
       } catch (e) {
